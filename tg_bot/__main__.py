@@ -18,13 +18,17 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-hey {}, my name is {}! if you have any questions about how to use me please give me /help... 
+Hi {} Darling. Kaise Ho ? 
+
+Im {}! if you have any questions about how to use me please give me /help... 
 
 im a group manager bot maintained by  [@AyanAnsari](tg://user?id={}).
 
-Join Our Channel - @OcDeals & Support Our Group @ocgroup.
+Add Me In Your Group [Click Here To Add](http://Telegram.me/DishaP_Bot?startgroup=botstart)
 
-If You Have Any Query Contact @AyanAnsaari.
+Join Our Channel - @TechXd1 & Support Our Group @TechnoAyanYT
+
+If You Have Any Query Join @DishaHelpChat
 
 For more commands click /help...
 
