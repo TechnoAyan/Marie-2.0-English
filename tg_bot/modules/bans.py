@@ -31,7 +31,7 @@ RBAN_ERRORS = {
 }
 
 RUNBAN_ERRORS = {
-    "User is an administrator of the chat",
+    "Me Admin Ko Ban Nhi kar Sakti",
     "Chat not found",
     "Not enough rights to restrict/unrestrict chat member",
     "User_not_participant",
@@ -76,7 +76,7 @@ def ban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("Khud Ko Ban Krlu ! Chutiya Smjha He Kya ? Chal ab @TechnoAyanYt Join Kr")
         return ""
 
     log = "<b>{}:</b>" \
@@ -139,7 +139,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("Khud Ko Ban Krlu ! Chutiya Smjha He Kya ? Chal ab @TechnoAyanYt Join Kr")
         return ""
 
     if not reason:
@@ -247,7 +247,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 def kickme(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     if is_user_admin(update.effective_chat, user_id):
-        update.effective_message.reply_text("I wish I could... but you're an admin.")
+        update.effective_message.reply_text("Tu Admin Hai Isliye Bach Gaya ! Nhi toh Aaj Tujhe Nikaal Ke Fek Deti")
         return
 
     res = update.effective_chat.unban_member(user_id)  # unban on current user = kick
@@ -282,11 +282,11 @@ def unban(bot: Bot, update: Update, args: List[str]) -> str:
             raise
 
     if user_id == bot.id:
-        message.reply_text("How would I unban myself if I wasn't here...?")
+        message.reply_text(Khud Ko unban Kaise Kru ? Chutiya He Kya ? Chal ab @TechnoAyanYt Join Kr")
         return ""
 
     if is_user_in_chat(chat, user_id):
-        message.reply_text("Why are you trying to unban someone that's already in the chat?")
+        message.reply_text("Abey Wo Pehle Se Chat Me Joined Hai")
         return ""
 
     chat.unban_member(user_id)
